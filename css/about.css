@@ -196,6 +196,57 @@ textarea {
   background: #38a89d;
 }
 
+/* -------------------- photographer -------------------- */
+
+
+.photographer-info {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.photographer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.photographer-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.photographer-text {
+  max-width: 600px;
+}
+
+.photographer-text h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.photographer-tagline {
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.photographer-socials a {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.photographer-socials a:hover {
+  color: #5c9d66;
+}
+
+
 /* -------------------- Footer -------------------- */
 .site-footer {
   background-color: #111;

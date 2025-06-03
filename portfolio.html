@@ -5,42 +5,24 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Portfolio | Nature &amp; Wildlife Photography</title>
 
-  <!-- Bootstrap 5 CSS -->
-  
-
   <!-- Google Fonts -->
   <link 
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Montserrat:wght@400;600&display=swap" 
-    rel="stylesheet"
-  >
+    rel="stylesheet">
 
   <!-- Font Awesome -->
-  <link 
-    rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-    integrity="sha512-pVIjzqVt4Z4o6D+gXAtK5oQXrXX5GdRi+Dq9e6+5n7oiM3hQBEz9D9G5OiPVFhAXVt5BqI9uXu7Y2mII5dY8EA==" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer" 
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <!-- Your Custom CSS -->
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/portfolio.css">
 </head>
 <body>
-  <!-- ===== HEADER ===== -->
   <header>
     <div class="container header-content">
-      <!-- LOGO（由 CSS 隱藏） -->
       <div class="logo">Nature &amp; Wildlife</div>
-
-      <!-- 漢堡按鈕 -->
       <div id="hamburger" class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </div>
-
-      <!-- 側邊滑出菜單 -->
       <aside id="sidebar" class="sidebar">
         <div id="close-btn" class="close-btn">&times;</div>
         <ul class="sidebar-menu">
@@ -54,91 +36,89 @@
     </div>
   </header>
 
-  <!-- <section class="search-bar">
-    <input type="text" id="search-input" placeholder="Describe what you're looking for...">
-    <button id="search-btn">Search</button>
-  </section> -->
-
-
   <main class="pt-5 mt-5">
-    <!-- ===== PORTFOLIO ===== -->
     <section id="portfolio" class="categories">
-      <!-- 全寬置中標題 -->
       <h2 class="section-title">Portfolio</h2>
-
-      <!-- 圖庫仍在 container 裡 -->
       <div class="container">
         <div class="gallery">
-          <!-- 1) Sugar Glider -->
-          <div class="gallery-item" data-src="images/lands/Sugar Glider.jpg" data-tags="sugar glider,gliding,marsupial,australia,nocturnal">
+          <div class="gallery-item" data-src="images/lands/Sugar Glider.jpg" data-tags="sugar glider">
             <img src="images/lands/Sugar Glider.jpg" alt="Sugar Glider">
             <div class="gallery-caption">
               <h3>Sugar Glider</h3>
               <p>A small gliding marsupial from Australia</p>
+              <button class="btn-more" data-location="Queensland, Australia">More</button>
             </div>
           </div>
-          <!-- 2) Sperm Whale -->
-          <div class="gallery-item" data-src="images/seas/sperm whale.jpg" data-tags="sperm whale,deep sea,ocean,leviathan,dive">
+
+          <div class="gallery-item" data-src="images/seas/sperm whale.jpg" data-tags="sperm whale">
             <img src="images/seas/sperm whale.jpg" alt="Sperm Whale">
             <div class="gallery-caption">
               <h3>Sperm Whale</h3>
               <p>The deep-diving leviathan of the oceans</p>
+              <button class="btn-more" data-location="Azores, Portugal">More</button>
             </div>
           </div>
-          <!-- 3) Polar Bear -->
-          <div class="gallery-item" data-src="images/lands/pole bear.jpg" data-tags="polar bear,arctic,ice,predator,white bear">
+
+          <div class="gallery-item" data-src="images/lands/pole bear.jpg" data-tags="polar bear">
             <img src="images/lands/pole bear.jpg" alt="Polar Bear">
             <div class="gallery-caption">
               <h3>Polar Bear</h3>
               <p>The majestic predator of the Arctic ice</p>
+              <button class="btn-more" data-location="Svalbard, Norway">More</button>
             </div>
           </div>
-          <!-- 4) Humpback Whale -->
-          <div class="gallery-item" data-src="images/seas/Humpback Whale.jpg" data-tags="humpback whale,breach,ocean,splash,mammal">
+
+          <div class="gallery-item" data-src="images/seas/Humpback Whale.jpg" data-tags="humpback whale">
             <img src="images/seas/Humpback Whale.jpg" alt="Humpback Whale">
             <div class="gallery-caption">
               <h3>Humpback Whale</h3>
               <p>A spectacular breach on the ocean surface</p>
+              <button class="btn-more" data-location="Maui, Hawaii">More</button>
             </div>
           </div>
-          <!-- 5) Kingfisher -->
-          <div class="gallery-item" data-src="images/skys/Kingfisher, Alcedo atthis.jpg" data-tags="kingfisher,bird,blue,water,hunting,perched">
-            <img src="images/skys/Kingfisher, Alcedo atthis.jpg" alt="Kingfisher, Alcedo atthis">
+
+          <div class="gallery-item" data-src="images/skys/Kingfisher, Alcedo atthis.jpg" data-tags="kingfisher">
+            <img src="images/skys/Kingfisher, Alcedo atthis.jpg" alt="Kingfisher">
             <div class="gallery-caption">
               <h3>Kingfisher (Alcedo atthis)</h3>
               <p>A vibrant bird perched by the water</p>
+              <button class="btn-more" data-location="Taiwan">More</button>
             </div>
           </div>
-          <!-- 6) Pigeon -->
-          <div class="gallery-item" data-src="images/skys/Pigeon.jpg" data-tags="flamingo,pink bird,graceful,dancer,wetlands">
+
+          <div class="gallery-item" data-src="images/skys/Mexican Pink Flamingo.jpg" data-tags="flamingo">
             <img src="images/skys/Mexican Pink Flamingo.jpg" alt="Mexican Pink Flamingo">
             <div class="gallery-caption">
               <h3>Mexican Pink Flamingo</h3>
-              <p>An dancer with surprising grace</p>
+              <p>An elegant dancer with surprising grace</p>
+              <button class="btn-more" data-location="Celestún, Mexico">More</button>
             </div>
           </div>
-          <!-- 7) Buck -->
-          <div class="gallery-item" data-src="images/lands/Buck.jpg" data-tags="buck,deer,antlers,forest,majestic">
+
+          <div class="gallery-item" data-src="images/lands/Buck.jpg" data-tags="buck,deer">
             <img src="images/lands/Buck.jpg" alt="Buck (Male Deer)">
             <div class="gallery-caption">
               <h3>Buck</h3>
               <p>A proud male deer in its natural habitat</p>
+              <button class="btn-more" data-location="Banff National Park, Canada">More</button>
             </div>
           </div>
-          <!-- 8) Leopard -->
-          <div class="gallery-item" data-src="images/lands/Leopard.jpg" data-tags="leopard,big cat,spots,savannah,predator">
+
+          <div class="gallery-item" data-src="images/lands/Leopard.jpg" data-tags="leopard">
             <img src="images/lands/Leopard.jpg" alt="Leopard">
             <div class="gallery-caption">
               <h3>Leopard</h3>
               <p>The elusive big cat of the savannah</p>
+              <button class="btn-more" data-location="Kruger National Park, South Africa">More</button>
             </div>
           </div>
-          <!-- 9) Elephant -->
-          <div class="gallery-item" data-src="images/lands/elephant.jpg" data-tags="elephant,africa,giant,tusks,herbivore">
+
+          <div class="gallery-item" data-src="images/lands/elephant.jpg" data-tags="elephant">
             <img src="images/lands/elephant.jpg" alt="Elephant">
             <div class="gallery-caption">
               <h3>Elephant</h3>
               <p>The gentle giant of the African plains</p>
+              <button class="btn-more" data-location="Serengeti National Park, Tanzania">More</button>
             </div>
           </div>
         </div>
@@ -146,7 +126,15 @@
     </section>
   </main>
 
-   <!-- Lightbox Container -->
+  <!-- Map Modal -->
+  <div id="map-modal" class="map-modal">
+    <div class="map-content">
+      <span id="map-close" class="close-btn">&times;</span>
+      <div id="map" style="width: 100%; height: 400px;"></div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
   <div class="lightbox">
     <span class="close-lightbox">&times;</span>
     <div class="lightbox-content">
@@ -155,7 +143,7 @@
     </div>
   </div>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-left">
@@ -172,10 +160,48 @@
     </div>
   </footer>
 
-  <!-- 引入外部 JS -->
+  <!-- Scripts -->
   <script src="js/lightbox.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/search.js"></script>
+
+  <!-- Google Maps Integration -->
+  <script>
+    let map;
+    let mapModal = document.getElementById('map-modal');
+    let mapClose = document.getElementById('map-close');
+
+    function initMap() {
+      const buttons = document.querySelectorAll('.btn-more');
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const location = btn.getAttribute('data-location');
+          const geocoder = new google.maps.Geocoder();
+          geocoder.geocode({ address: location }, (results, status) => {
+            if (status === 'OK') {
+              const loc = results[0].geometry.location;
+              map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 6,
+                center: loc
+              });
+              new google.maps.Marker({ position: loc, map: map });
+              mapModal.style.display = 'block';
+            } else {
+              alert("Geocode failed: " + status);
+            }
+          });
+        });
+      });
+
+      mapClose.addEventListener('click', () => {
+        mapModal.style.display = 'none';
+      });
+    }
+  </script>
+
+  <!-- Google Maps API -->
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8GRKw_Tks0TBFinzKO1z2PRg_Cr9X8aA&callback=initMap">
+  </script>
 </body>
 </html>
-
