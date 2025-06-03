@@ -9,4 +9,15 @@
 4. https://www.pexels.com/@magda-ehlers-pexels/highlights/
 
 
+----------------- ------------------------
+
+1. portfolio can try like https://kids.nationalgeographic.com/animals
+
+2. about( upload photographer done ) or add another photographer ( for ocean)
+
+3. update git:	1. 開新資料夾，git init 建立數據庫
+		2. 新增一個 index.html 檔案
+		3. 加入索引：git add .
+		4. 提交版本：git commit -m "新增網頁"
+		5. 觀看歷史紀錄：git log，並會看到一個版本紀錄
 

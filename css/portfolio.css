@@ -194,15 +194,21 @@ section {
 .lightbox.open {
   display: flex;
 }
+/* 修改這段 CSS */
 .lightbox-content {
   position: relative;
   max-width: 90%;
   max-height: 90%;
 }
+
 .lightbox-image {
-  width: 100%;
-  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 80vh; /* 新增：限制最大高度 */
+  display: block;
+  margin: 0 auto;
 }
+
 .lightbox-caption {
   margin-top: 0.5rem;
   text-align: center;

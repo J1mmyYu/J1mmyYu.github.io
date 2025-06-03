@@ -9,12 +9,16 @@ const closeBtn       = document.querySelector('.close-lightbox');
 
 // 2. 點擊任何 gallery-item 時，顯示 lightbox 並載入對應圖片與說明
 galleryItems.forEach(item => {
-  item.addEventListener('click', () => {
-    lightboxImage.src       = item.dataset.src;
+  item.addEventListener('click', e => {
+    // 如果點的是 button（More 按鈕），就不要開啟 lightbox
+    if (e.target.classList.contains('btn-more')) return;
+
+    lightboxImage.src = item.dataset.src;
     lightboxCaption.innerHTML = item.querySelector('.gallery-caption').innerHTML;
-    lightbox.style.display  = 'flex';
+    lightbox.style.display = 'flex';
   });
 });
+
 
 // 3. 點擊關閉按鈕或背景，隱藏 lightbox
 closeBtn.addEventListener('click', () => {
