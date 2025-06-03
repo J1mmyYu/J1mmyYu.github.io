@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buck | Forest Champion</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Montserrat', sans-serif; background: #f4fff2; color: #2e3e1c; margin: 0; }
+    header { background: #6a994e; color: white; padding: 1.5rem 2rem; text-align: center; }
+    .hero-img { width: 100%; max-height: 400px; object-fit: cover; }
+    .container { padding: 2rem; max-width: 900px; margin: auto; }
+    .info-card {
+      background: #dcf5d1;
+      border-left: 8px solid #90be6d;
+      border-radius: 10px;
+      padding: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 2rem 0;
+    }
+    .info-card img {
+      width: 180px; height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 1.5rem;
+    }
+    .info-text { flex: 1; min-width: 200px; }
+    .highlight { color: #386641; font-weight: bold; }
+    a.back-link {
+      display: inline-block; margin-top: 2rem;
+      color: #52734d; font-weight: bold; text-decoration: none;
+    }
+    @media (max-width: 600px) {
+      .info-card { flex-direction: column; text-align: center; }
+      .info-card img { margin-bottom: 1rem; margin-right: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Buck</h1>
+    <p>The Antlered Athlete of the Woods</p>
+  </header>
+
+  <img src="../images/lands/Buck.jpg" alt="Buck" class="hero-img" />
+
+  <div class="container">
+    <p>
+      A "buck" is a mature male deer, recognized by its impressive antlers. During mating season, bucks use their antlers to challenge rivals and attract mates.
+    </p>
+
+    <div class="info-card">
+      <img src="../images/lands/Buck.jpg" alt="Buck" />
+      <div class="info-text">
+        <h3>Quick Facts</h3>
+        <p><span class="highlight">Common Name:</span> Buck</p>
+        <p><span class="highlight">Scientific Name:</span> <em>Varies by species (e.g., Odocoileus virginianus)</em></p>
+        <p><span class="highlight">Type:</span> Mammal</p>
+        <p><span class="highlight">Diet:</span> Herbivore (leaves, grasses, twigs)</p>
+        <p><span class="highlight">Lifespan:</span> 6–14 years</p>
+        <p><span class="highlight">Height:</span> 90–105 cm (at shoulder)</p>
+        <p><span class="highlight">Weight:</span> 60–150 kg (130–330 lbs)</p>
+      </div>
+    </div>
+
+    <p>
+      Bucks are found worldwide, from forests to grasslands. Their antlers shed and regrow annually, often growing larger each year.
+    </p>
+
+    <a class="back-link" href="../portfolio.html">&larr; Back to Portfolio</a>
+  </div>
+
+</body>
+</html>

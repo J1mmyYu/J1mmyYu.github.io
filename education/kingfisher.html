@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kingfisher | Precision Diver</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Montserrat', sans-serif; background: #e0f7f4; color: #003344; margin: 0; }
+    header { background: #00bfa5; color: white; padding: 1.5rem 2rem; text-align: center; }
+    .hero-img { width: 100%; max-height: 400px; object-fit: cover; }
+    .container { padding: 2rem; max-width: 900px; margin: auto; }
+    .info-card {
+      background: #ccf0e7;
+      border-left: 8px solid #26a69a;
+      border-radius: 10px;
+      padding: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 2rem 0;
+    }
+    .info-card img {
+      width: 180px; height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 1.5rem;
+    }
+    .info-text { flex: 1; min-width: 200px; }
+    .highlight { color: #00796b; font-weight: bold; }
+    a.back-link {
+      display: inline-block; margin-top: 2rem;
+      color: #00796b; font-weight: bold; text-decoration: none;
+    }
+    @media (max-width: 600px) {
+      .info-card { flex-direction: column; text-align: center; }
+      .info-card img { margin-bottom: 1rem; margin-right: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kingfisher</h1>
+    <p>The Colorful, Fast-Diving Bird</p>
+  </header>
+
+  <img src="../images/skys/Kingfisher, Alcedo atthis.jpg" alt="Kingfisher" class="hero-img" />
+
+  <div class="container">
+    <p>
+      Kingfishers are vibrant birds known for their incredible speed and precision when diving to catch fish. Their specialized eyes allow them to judge underwater distance and depth perfectly.
+    </p>
+
+    <div class="info-card">
+      <img src="../images/skys/Kingfisher, Alcedo atthis.jpg" alt="Kingfisher" />
+      <div class="info-text">
+        <h3>Quick Facts</h3>
+        <p><span class="highlight">Common Name:</span> Kingfisher</p>
+        <p><span class="highlight">Scientific Name:</span> <em>Alcedo atthis</em></p>
+        <p><span class="highlight">Type:</span> Bird</p>
+        <p><span class="highlight">Diet:</span> Carnivore (mainly fish)</p>
+        <p><span class="highlight">Lifespan:</span> Up to 15 years</p>
+        <p><span class="highlight">Size:</span> 16–18 cm (6.3–7.1 in)</p>
+        <p><span class="highlight">Weight:</span> About 35 grams (1.2 oz)</p>
+      </div>
+    </div>
+
+    <p>
+      They typically nest near rivers and lakes, digging burrows into sandy banks. Their colors shine vividly in sunlight, making them favorites among birdwatchers.
+    </p>
+
+    <a class="back-link" href="../portfolio.html">&larr; Back to Portfolio</a>
+  </div>
+
+</body>
+</html>

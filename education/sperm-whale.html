@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Sperm Whale | Ocean Explorer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      background: #e6f3f8;
+      color: #003344;
+      line-height: 1.6;
+    }
+    header {
+      background: #006994;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    .hero-img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .info-card {
+      background: #cceeff;
+      border-left: 8px solid #0099cc;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .info-card img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 1.5rem;
+    }
+    .info-text {
+      flex: 1;
+      min-width: 200px;
+    }
+    .info-text h3 {
+      margin-top: 0;
+    }
+    .highlight {
+      font-weight: bold;
+      color: #006994;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #006994;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    @media (max-width: 600px) {
+      .info-card {
+        flex-direction: column;
+        text-align: center;
+      }
+      .info-card img {
+        margin-bottom: 1rem;
+        margin-right: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sperm Whale</h1>
+    <p>The Deep-Diving Giant of the Ocean</p>
+  </header>
+
+  <img src="../images/seas/sperm whale.jpg" alt="Sperm Whale" class="hero-img" />
+
+  <div class="container">
+    <p>
+      The sperm whale is the largest toothed predator on Earth. It can dive over 2,000 meters deep to hunt giant squid in the ocean’s darkest zones. These whales have the biggest brain of any animal and use powerful echolocation to navigate and find prey underwater.
+    </p>
+
+    <div class="info-card">
+      <img src="../images/seas/sperm whale.jpg" alt="Sperm Whale" />
+      <div class="info-text">
+        <h3>Quick Facts</h3>
+        <p><span class="highlight">Common Name:</span> Sperm Whale</p>
+        <p><span class="highlight">Scientific Name:</span> <em>Physeter macrocephalus</em></p>
+        <p><span class="highlight">Type:</span> Mammal</p>
+        <p><span class="highlight">Diet:</span> Carnivore (mainly squid)</p>
+        <p><span class="highlight">Average Lifespan:</span> 60 – 70 years</p>
+        <p><span class="highlight">Size:</span> Up to 20 meters (66 feet)</p>
+        <p><span class="highlight">Weight:</span> Up to 57,000 kg (125,000 lbs)</p>
+      </div>
+    </div>
+
+    <p>
+      Sperm whales live in pods and can hold their breath for over an hour. Their block-shaped heads contain a special organ called a "spermaceti organ," which may help in buoyancy and sonar-like sound generation. Though once heavily hunted for oil, sperm whales are now protected, yet still affected by noise pollution and plastic debris.
+    </p>
+
+    <a class="back-link" href="../portfolio.html">&larr; Back to Portfolio</a>
+  </div>
+
+</body>
+</html>

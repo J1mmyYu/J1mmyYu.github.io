@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Polar Bear | Arctic Life</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f0f8ff;
+      color: #003344;
+      margin: 0;
+    }
+    header {
+      background: #0077b6;
+      color: white;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+    .hero-img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .info-card {
+      background: #dff6ff;
+      border-left: 8px solid #00b4d8;
+      border-radius: 10px;
+      padding: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 2rem 0;
+    }
+    .info-card img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 1.5rem;
+    }
+    .info-text {
+      flex: 1;
+      min-width: 200px;
+    }
+    .highlight {
+      color: #0077b6;
+      font-weight: bold;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #0077b6;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    @media (max-width: 600px) {
+      .info-card {
+        flex-direction: column;
+        text-align: center;
+      }
+      .info-card img {
+        margin-bottom: 1rem;
+        margin-right: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Polar Bear</h1>
+    <p>The King of the Arctic</p>
+  </header>
+
+  <img src="../images/lands/pole bear.jpg" alt="Polar Bear" class="hero-img" />
+
+  <div class="container">
+    <p>
+      Polar bears are powerful predators perfectly adapted to life on the Arctic sea ice. They are excellent swimmers and rely on sea ice to hunt their main prey: seals. Their thick fur and a layer of fat help them survive in freezing temperatures.
+    </p>
+
+    <div class="info-card">
+      <img src="../images/lands/pole bear.jpg" alt="Polar Bear" />
+      <div class="info-text">
+        <h3>Quick Facts</h3>
+        <p><span class="highlight">Common Name:</span> Polar Bear</p>
+        <p><span class="highlight">Scientific Name:</span> <em>Ursus maritimus</em></p>
+        <p><span class="highlight">Type:</span> Mammal</p>
+        <p><span class="highlight">Diet:</span> Carnivore (mainly seals)</p>
+        <p><span class="highlight">Average Lifespan:</span> 20 – 25 years</p>
+        <p><span class="highlight">Size:</span> 2.4 to 3 meters (8–10 feet)</p>
+        <p><span class="highlight">Weight:</span> 350–700 kg (770–1,540 lbs)</p>
+      </div>
+    </div>
+
+    <p>
+      Climate change is reducing the amount of sea ice, making it harder for polar bears to find food. Conservation efforts focus on reducing emissions and protecting critical habitats to ensure the future of this majestic Arctic animal.
+    </p>
+
+    <a class="back-link" href="../portfolio.html">&larr; Back to Portfolio</a>
+  </div>
+
+</body>
+</html>

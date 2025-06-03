@@ -223,6 +223,22 @@ section {
   cursor: pointer;
 }
 
+.btn-learn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background-color: #ffa500;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.btn-learn:hover {
+  background-color: #cc8400;
+}
+
+
 .btn-more {
   margin-top: 10px;
   padding: 6px 12px;

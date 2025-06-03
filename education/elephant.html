@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elephant | The Gentle Giant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Montserrat', sans-serif; background: #f0f4c3; color: #3e4c00; margin: 0; }
+    header { background: #9e9d24; color: white; padding: 1.5rem 2rem; text-align: center; }
+    .hero-img { width: 100%; max-height: 400px; object-fit: cover; }
+    .container { padding: 2rem; max-width: 900px; margin: auto; }
+    .info-card {
+      background: #f5fbc3;
+      border-left: 8px solid #afb42b;
+      border-radius: 10px;
+      padding: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 2rem 0;
+    }
+    .info-card img {
+      width: 180px; height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 1.5rem;
+    }
+    .info-text { flex: 1; min-width: 200px; }
+    .highlight { color: #827717; font-weight: bold; }
+    a.back-link {
+      display: inline-block; margin-top: 2rem;
+      color: #827717; font-weight: bold; text-decoration: none;
+    }
+    @media (max-width: 600px) {
+      .info-card { flex-direction: column; text-align: center; }
+      .info-card img { margin-bottom: 1rem; margin-right: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Elephant</h1>
+    <p>The Wise Giant of the Land</p>
+  </header>
+
+  <img src="../images/lands/elephant.jpg" alt="Elephant" class="hero-img" />
+
+  <div class="container">
+    <p>
+      Elephants are the largest land mammals on Earth. They live in complex family groups and are known for their intelligence, memory, and ability to communicate with infrasound.
+    </p>
+
+    <div class="info-card">
+      <img src="../images/lands/elephant.jpg" alt="Elephant" />
+      <div class="info-text">
+        <h3>Quick Facts</h3>
+        <p><span class="highlight">Common Name:</span> Elephant</p>
+        <p><span class="highlight">Scientific Name:</span> <em>Loxodonta africana / Elephas maximus</em></p>
+        <p><span class="highlight">Type:</span> Mammal</p>
+        <p><span class="highlight">Diet:</span> Herbivore</p>
+        <p><span class="highlight">Lifespan:</span> 60–70 years</p>
+        <p><span class="highlight">Height:</span> Up to 3.3 m (10.8 ft)</p>
+        <p><span class="highlight">Weight:</span> 4,000–7,000 kg</p>
+      </div>
+    </div>
+
+    <p>
+      Elephants shape their environment and are considered keystone species. Sadly, they face threats from poaching and habitat loss.
+    </p>
+
+    <a class="back-link" href="../portfolio.html">&larr; Back to Portfolio</a>
+  </div>
+
+</body>
+</html>
