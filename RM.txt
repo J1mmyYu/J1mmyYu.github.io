@@ -20,4 +20,10 @@
 		3. 加入索引：git add .
 		4. 提交版本：git commit -m "新增網頁"
 		5. 觀看歷史紀錄：git log，並會看到一個版本紀錄
+		
+		https://w3c.hexschool.com/git/b9be5b1e
+
+4.
+
+
 
