@@ -1,0 +1,301 @@
+/* home.css */
+
+/* -------------------- 變數 -------------------- */
+:root {
+  --primary: #4ecdc4;
+  --secondary: #333;
+  --light: #f9f9f9;
+  --dark: #1a1a1a;
+}
+
+/* -------------------- 全域 -------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  color: var(--light);
+  background-color: var(--dark);
+  overflow-x: hidden;
+}
+
+/* -------------------- HEADER -------------------- */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(26, 26, 26, 0.85);
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  z-index: 1000;
+}
+
+.container.header-content {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--light);
+}
+
+/* -------------------- 漢堡按鈕 -------------------- */
+.hamburger {
+  width: 30px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1100;
+}
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+/* -------------------- 側邊欄 -------------------- */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 260px;
+  height: 100vh;
+  background: var(--light);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 1050;
+  padding-top: 60px;
+}
+.sidebar.open {
+  transform: translateX(0);
+}
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--secondary);
+}
+.sidebar-menu {
+  list-style: none;
+  text-align: center;
+  margin-top: 2rem;
+}
+.sidebar-menu li {
+  margin: 1.5rem 0;
+}
+.sidebar-menu a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+.sidebar-menu a:hover {
+  color: var(--primary);
+}
+
+/* -------------------- HERO 版型 -------------------- */
+.hero {
+  margin-top: 60px;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.hero-text {
+  
+  position: absolute;
+  left: 5%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 2rem 0;
+}
+
+.hero-text h1 {
+  font-size: 8.2rem;
+  font-weight: 440;
+  line-height: 0.90;
+  margin-top: -150px;
+  margin-left: 240px;
+  margin-bottom: 2rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-text .hero-link {
+  font-size: 0.8rem;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+  width: max-content;
+  margin-top: -30px;
+  margin-left: 252px;
+  margin-bottom: 1rem;  
+  padding-bottom: 3px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.hero-text .hero-link:hover {
+  opacity: 0.8;
+  transform: translateX(5px);
+}
+
+.hero-image {
+  width: 65%;
+  height: 100%;
+  margin-left: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(26,26,26,0.4) 0%, transparent 50%);
+  z-index: 2;
+}
+
+.hero-image img {
+  width: 70%;
+  height: 80%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.58s ease-in-out;
+}
+
+
+
+/* -------------------- 響應式 -------------------- */
+@media screen and (max-width: 1200px) {
+  .hero-text h1 {
+    font-size: 6rem;
+  }
+  .hero-image {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .hero-text {
+    position: static;
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    background: rgba(26,26,26,0.8);
+  }
+  
+  .hero-text h1 {
+    font-size: 4rem;
+    text-shadow: none;
+  }
+  
+  
+  .hero-image::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+  
+  .hero-text .hero-link {
+    font-size: 1rem;
+  }
+  
+  .hero-image {
+    height: 50vh;
+  }
+}
+
+/* -------------------- FOOTER -------------------- */
+/* -------------------- Footer -------------------- */
+.site-footer {
+  background-color: #111;
+  color: var(--text-muted);
+  padding: 2rem 1rem;
+  font-size: 0.95rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+}
+
+.footer-left p {
+  margin: 0;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+  color: var(--primary);
+}
+
+/* Responsive footer */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
